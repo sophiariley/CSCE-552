@@ -22,7 +22,7 @@ public class ClickTarget : MonoBehaviour
 
         rend = this.gameObject.GetComponent<SpriteRenderer>();
         originalColor = rend.color;
-        StartCoroutine(delayFade(2));
+        StartCoroutine(delayFade(100));
 
     }
 
