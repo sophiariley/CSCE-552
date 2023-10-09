@@ -12,9 +12,15 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
+<<<<<<< HEAD
   companyName: DefaultCompany
   productName: My project GItHub Test
   defaultCursor: {fileID: 2800000, guid: 6aae8bd6b8fa63b41a4aa6d226ad203b, type: 3}
+=======
+  companyName: Oops! All Birds Studios
+  productName: Find The JJ
+  defaultCursor: {fileID: 0}
+>>>>>>> dcc9632733549b727a1ccaf006582c4cad235e5f
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -445,6 +451,7 @@ PlayerSettings:
   switchSocketConcurrencyLimit: 14
   switchScreenResolutionBehavior: 2
   switchUseCPUProfiler: 0
+  switchEnableFileSystemTrace: 0
   switchUseGOLDLinker: 0
   switchLTOSetting: 0
   switchApplicationID: 0x01004b9000490000
