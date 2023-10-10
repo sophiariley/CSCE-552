@@ -24,7 +24,7 @@ public class Distance : MonoBehaviour
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Distance_ = Vector3.Distance(targetPrefab.transform.position, mousePos) * 10;
 
-        if (Distance_ < 100)
+        if (Distance_ < 105)
         {
             Debug.Log("Touch!!");
             myAudioSource.volume = 1;
@@ -33,17 +33,21 @@ public class Distance : MonoBehaviour
         else if (Distance_ < 110)
         {
             Debug.Log("Very CLOSE");
-            myAudioSource.volume = 0.75f;
+            myAudioSource.volume = 0.80f;
         }
         else if (Distance_ < 120)
         {
             Debug.Log("NOT SO CLOSE");
-            myAudioSource.volume = 0.5f;
+            myAudioSource.volume = 0.6f;
+        }
+        else if (Distance_ < 130)
+        {
+            myAudioSource.volume = 0.4f;
         }
         else
         {
             Debug.Log("FAR!!");
-            myAudioSource.volume = 0.25f;
+            myAudioSource.volume = 0.2f;
         }
 
 
