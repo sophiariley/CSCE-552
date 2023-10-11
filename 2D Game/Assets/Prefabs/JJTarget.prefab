@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1682717971489590095}
   - component: {fileID: 714726799117649464}
   - component: {fileID: 7708023051570384835}
+  - component: {fileID: 4104703862188228917}
   m_Layer: 0
   m_Name: JJTarget
   m_TagString: target
@@ -139,7 +140,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5590503739540898812}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 582614e817df06c48bed33eb3c451d50, type: 3}
   m_Name: 
@@ -161,3 +162,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPrefab: {fileID: 5590503739540898812}
   Distance_: 0
+  myAudioSource: {fileID: 0}
+--- !u!114 &4104703862188228917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5590503739540898812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651f5cdc62a200445b34ccb3995f4031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JJ: {fileID: 5590503739540898812}
+  center: {x: 0, y: 0, z: 0}
+  size: {x: 20, y: 10, z: 0}
