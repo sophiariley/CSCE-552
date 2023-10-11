@@ -18,7 +18,7 @@ public class StartGame : MonoBehaviour
     }
 
     public void startGame() {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("InGameScrene");
     }
 
     public void quitGame() {
