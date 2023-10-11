@@ -38,10 +38,10 @@ public class TimerBehavior : MonoBehaviour
         if(hasLimit && (countDown && currentTime <= timerLimit) || (!countDown && currentTime >= timerLimit))
         {
             currentTime = timerLimit;
+            HandleTimerLimitReached();
             SetTimerText();
             timerText.color = Color.red;
             enabled = false;
-            // SceneManager.LoadScene("LoseScreen");
         }
         SetTimerText();
     }
@@ -50,7 +50,21 @@ public class TimerBehavior : MonoBehaviour
     {
         timerText.text = hasFormat ? currentTime.ToString(timeFormats[format]) : currentTime.ToString();    
     }
-
+    private void HandleTimerLimitReached() // WORK GOD DAMN YOU
+    {
+        timerText.color = Color.red;
+        // Check if the scene "LoseScreen" exists before loading it
+        if (SceneManager.GetSceneByName("LoseScreen").isLoaded)
+        {
+            SceneManager.LoadScene("LoseScreen");
+        }
+        // Debugging...
+        else
+        {
+            Debug.LogError("The 'LoseScreen' scene does not exist.");
+        }
+        enabled = false;
+    }
 }
 
 public enum TimerFormats
