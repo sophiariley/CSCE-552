@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TimerBehavior : MonoBehaviour
 {
@@ -38,11 +39,9 @@ public class TimerBehavior : MonoBehaviour
         {
             currentTime = timerLimit;
             SetTimerText();
-            if(currentTime == 0)
-            {
-                timerText.color = Color.red;
-                enabled = false;
-            }
+            timerText.color = Color.red;
+            enabled = false;
+            // SceneManager.LoadScene("LoseScreen");
         }
         SetTimerText();
     }
@@ -51,6 +50,7 @@ public class TimerBehavior : MonoBehaviour
     {
         timerText.text = hasFormat ? currentTime.ToString(timeFormats[format]) : currentTime.ToString();    
     }
+
 }
 
 public enum TimerFormats
