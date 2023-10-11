@@ -38,8 +38,11 @@ public class TimerBehavior : MonoBehaviour
         {
             currentTime = timerLimit;
             SetTimerText();
-            // timerText.color = Color.red;
-            enabled = false;
+            if(currentTime == 0)
+            {
+                timerText.color = Color.red;
+                enabled = false;
+            }
         }
         SetTimerText();
     }
