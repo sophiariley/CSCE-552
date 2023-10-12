@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClickTarget : MonoBehaviour
 {
@@ -15,14 +16,14 @@ public class ClickTarget : MonoBehaviour
     void Start()
     {
         //rend = this.gameObject.GetComponent<SpriteRenderer>();
-        Vector3 pos = center + new Vector3(Random.Range(-size.x / 2, size.x / 2),
-                                           Random.Range(-size.y / 2, size.y / 2),
+        Vector3 pos = center + new Vector3(Random.Range((-size.x / 2) + size.x/10, (size.x / 2) - size.x/10),
+                                           Random.Range((-size.y / 2) + size.y/10, (size.y / 2) - size.y/10),
                                            0);
         transform.position = pos;
 
         rend = this.gameObject.GetComponent<SpriteRenderer>();
         originalColor = rend.color;
-        StartCoroutine(delayFade(100));
+        StartCoroutine(delayFade(100)); //set to 0 to make sprite invisible
 
     }
 
@@ -49,6 +50,7 @@ public class ClickTarget : MonoBehaviour
                         rend.color = originalColor;
                         SpawnNextCircle();
                     }
+                
                 }
             }
         }
@@ -83,4 +85,9 @@ public class ClickTarget : MonoBehaviour
         Color transparentColor = new Color(rend.color.r, rend.color.g, rend.color.b, 0f);
         rend.color = transparentColor;
     }
+
+    // private void OnMouseDown()
+    // {
+    //     SceneManager.LoadScene("WinScreen");
+    // }
 }
