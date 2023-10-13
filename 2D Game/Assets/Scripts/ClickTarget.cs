@@ -13,6 +13,9 @@ public class ClickTarget : MonoBehaviour
     private SpriteRenderer rend;
     private Color originalColor;
 
+    // Don't want to create new variables in update
+    public Vector3 mousePos;
+    public Vector2 mousePos2D; 
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +27,7 @@ public class ClickTarget : MonoBehaviour
         Color transparentColor = new Color(rend.color.r, rend.color.g, rend.color.b, 0f);
         rend.color = transparentColor;
 
-        Vector3 pos = center + randPosition();
+        Vector3 pos = randPosition();
         transform.position = pos;
 
         
@@ -37,8 +40,8 @@ public class ClickTarget : MonoBehaviour
     void Update()
     {
         //Raycast & Hit2D Detecting
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
         RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
 
@@ -124,7 +127,7 @@ public class ClickTarget : MonoBehaviour
             y = (-height + 3);
         }*/
 
-        return new Vector3((float) x, (float) y, 0);
+        return center + new Vector3((float) x, (float) y, 0);
     }
 
     // private void OnMouseDown()
