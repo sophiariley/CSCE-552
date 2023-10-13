@@ -16,12 +16,18 @@ public class ClickTarget : MonoBehaviour
     void Start()
     {
         //rend = this.gameObject.GetComponent<SpriteRenderer>();
-        Vector3 pos = center + randPosition();
-        transform.position = pos;
 
         rend = this.gameObject.GetComponent<SpriteRenderer>();
         originalColor = rend.color;
-        StartCoroutine(delayFade(100)); //set to 0 to make sprite invisible
+        Color transparentColor = new Color(rend.color.r, rend.color.g, rend.color.b, 0f);
+        rend.color = transparentColor;
+
+        Vector3 pos = center + randPosition();
+        transform.position = pos;
+
+        
+
+        StartCoroutine(delayFade(0)); //set to 0 to make sprite invisible
 
     }
 
@@ -46,7 +52,8 @@ public class ClickTarget : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         rend.color = originalColor;
-                        SpawnNextCircle();
+                        SceneManager.LoadScene("WinScreen");
+                        //SpawnNextCircle();
                     }
                 
                 }
