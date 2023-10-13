@@ -16,9 +16,7 @@ public class ClickTarget : MonoBehaviour
     void Start()
     {
         //rend = this.gameObject.GetComponent<SpriteRenderer>();
-        Vector3 pos = center + new Vector3(Random.Range((-size.x / 2) + size.x/10, (size.x / 2) - size.x/10),
-                                           Random.Range((-size.y / 2) + size.y/10, (size.y / 2) - size.y/10),
-                                           0);
+        Vector3 pos = center + randPosition();
         transform.position = pos;
 
         rend = this.gameObject.GetComponent<SpriteRenderer>();
@@ -59,13 +57,16 @@ public class ClickTarget : MonoBehaviour
 
     void SpawnNextCircle()
     {
+        moveJJ();
+
         //Random Spawning in dedicated position
-        Vector3 pos = center + new Vector3(Random.Range(-size.x / 2, size.x / 2),
+        /*Vector3 pos = center + new Vector3(Random.Range(-size.x / 2, size.x / 2),
                                            Random.Range(-size.y / 2, size.y / 2),
                                            0);
         
         Instantiate(targetPrefab, pos, Quaternion.identity);
-        Destroy(gameObject);
+        Destroy(gameObject);*/
+
         // StartCoroutine(delayDestroy(2));
 
         
@@ -84,6 +85,27 @@ public class ClickTarget : MonoBehaviour
         yield return new WaitForSeconds(s);
         Color transparentColor = new Color(rend.color.r, rend.color.g, rend.color.b, 0f);
         rend.color = transparentColor;
+    }
+
+    void moveJJ() {
+        targetPrefab.transform.position = center + randPosition();
+    }
+
+    Vector3 randPosition() {
+        double x = Random.Range(-size.x / 2, size.x / 2);
+        double y = Random.Range(-size.y / 2, size.y / 2);
+
+        if (x > 9.4) {
+            x = 9.4;
+        } else if (x < -9.4) {
+            x = -9.4;
+        } else if (y > 3.6) {
+            y = 3.6;
+        } else if (y < -3.6) {
+            y = -3.6;
+        }
+
+        return new Vector3((float) x, (float) y, 0);
     }
 
     // private void OnMouseDown()

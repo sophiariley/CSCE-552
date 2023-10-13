@@ -1795,7 +1795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1991268848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1941,6 +1941,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 714726799117649464, guid: 8320e435121390d4189c515a92b02999, type: 3}
+      propertyPath: size.x
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1682717971489590095, guid: 8320e435121390d4189c515a92b02999, type: 3}
       propertyPath: m_IsTrigger
       value: 1
