@@ -236,9 +236,8 @@ GameObject:
   - component: {fileID: 150329943}
   - component: {fileID: 150329942}
   - component: {fileID: 150329941}
-  - component: {fileID: 150329944}
   m_Layer: 5
-  m_Name: MenuButton
+  m_Name: btn_menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -358,18 +357,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150329939}
   m_CullTransparentMesh: 1
---- !u!114 &150329944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150329939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c09dacf7278cdb4a816babce0d0e814, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &184540335
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +369,7 @@ GameObject:
   - component: {fileID: 184540338}
   - component: {fileID: 184540337}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: txt_pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -670,7 +657,7 @@ GameObject:
   - component: {fileID: 672069096}
   - component: {fileID: 672069095}
   m_Layer: 5
-  m_Name: jj in da corner
+  m_Name: img_jj in da corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -923,7 +910,7 @@ GameObject:
   - component: {fileID: 1178376151}
   - component: {fileID: 1178376150}
   m_Layer: 5
-  m_Name: PauseButton
+  m_Name: btn_pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1160,7 +1147,7 @@ GameObject:
   - component: {fileID: 1333582328}
   - component: {fileID: 1333582327}
   m_Layer: 5
-  m_Name: Pause Text
+  m_Name: txt_pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1294,7 +1281,7 @@ GameObject:
   - component: {fileID: 1377531946}
   - component: {fileID: 1377531945}
   m_Layer: 5
-  m_Name: InstructionText
+  m_Name: txt_instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1429,7 +1416,7 @@ GameObject:
   - component: {fileID: 1672960589}
   - component: {fileID: 1672960588}
   m_Layer: 5
-  m_Name: ResumeButton
+  m_Name: btn_resume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
