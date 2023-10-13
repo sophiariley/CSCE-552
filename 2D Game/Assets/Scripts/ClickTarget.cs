@@ -16,10 +16,12 @@ public class ClickTarget : MonoBehaviour
     // Don't want to create new variables in update
     public Vector3 mousePos;
     public Vector2 mousePos2D; 
-    // public RaycastHit2D hit;
+    public RaycastHit2D hit = new RaycastHit2D();
 
     float height;
     float width;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +50,7 @@ public class ClickTarget : MonoBehaviour
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
-         RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
+        hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
 
         //Checking if what you hit is available
         if (hit.collider != null)
@@ -113,6 +115,8 @@ public class ClickTarget : MonoBehaviour
     Vector3 randPosition() {
         
         // sorry don't see the need to create these vars so i put everything in the return statement
+        // and moved height and width to be class vars
+        
         // double x = Random.Range(-width, width);
         // double y = Random.Range(-height, height);
         // Debug.Log("Height: " + height + "\nWidth :" + width);
