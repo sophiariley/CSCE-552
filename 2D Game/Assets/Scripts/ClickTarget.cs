@@ -9,12 +9,14 @@ public class ClickTarget : MonoBehaviour
 
     public Vector3 center;
     public Vector3 size;
+    public Camera camera;
     private SpriteRenderer rend;
     private Color originalColor;
 
     // Start is called before the first frame update
     void Start()
     {
+        camera = Camera.main;
         //rend = this.gameObject.GetComponent<SpriteRenderer>();
 
         rend = this.gameObject.GetComponent<SpriteRenderer>();
@@ -99,18 +101,26 @@ public class ClickTarget : MonoBehaviour
     }
 
     Vector3 randPosition() {
-        double x = Random.Range(-size.x / 2, size.x / 2);
-        double y = Random.Range(-size.y / 2, size.y / 2);
+        float height = camera.orthographicSize;
+        float width = camera.aspect * height;
+        double x = Random.Range(-width, width);
+        double y = Random.Range(-height, height);
+        Debug.Log("Height: " + height + "\nWidth :" + width);
+        Debug.Log("JJ Height: " + y + "\nJJ Width :" + x);
+        //double x = Random.Range(-size.x / 2, size.x / 2);
+        //double y = Random.Range(-size.y / 2, size.y / 2);
+        
+        
 
-        if (x > 9.4) {
-            x = 9.4;
-        } else if (x < -9.4) {
-            x = -9.4;
-        } else if (y > 3.6) {
-            y = 3.6;
-        } else if (y < -3.6) {
-            y = -3.6;
-        }
+        /*if (x > (width - 2)) {
+            x = (width - 2);
+        } else if (x < (-width + 2)) {
+            x = (-width + 2);
+        } else if (y > (height - 3)) {
+            y = (height - 3);
+        } else if (y < (-height + 3)) {
+            y = (-height + 3);
+        }*/
 
         return new Vector3((float) x, (float) y, 0);
     }

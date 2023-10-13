@@ -1942,6 +1942,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 714726799117649464, guid: 8320e435121390d4189c515a92b02999, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2091621593}
+    - target: {fileID: 714726799117649464, guid: 8320e435121390d4189c515a92b02999, type: 3}
       propertyPath: size.x
       value: 20
       objectReference: {fileID: 0}
@@ -1951,11 +1955,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1682717971489590095, guid: 8320e435121390d4189c515a92b02999, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 5.87
+      value: 4.3481483
       objectReference: {fileID: 0}
     - target: {fileID: 1682717971489590095, guid: 8320e435121390d4189c515a92b02999, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 7.3
+      value: 5.4074073
       objectReference: {fileID: 0}
     - target: {fileID: 5590503739540898812, guid: 8320e435121390d4189c515a92b02999, type: 3}
       propertyPath: m_Name
@@ -1963,11 +1967,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5625452133484344813, guid: 8320e435121390d4189c515a92b02999, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.41823512
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5625452133484344813, guid: 8320e435121390d4189c515a92b02999, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40761548
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5625452133484344813, guid: 8320e435121390d4189c515a92b02999, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5625452133484344813, guid: 8320e435121390d4189c515a92b02999, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2009,6 +2017,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5625452133484344813, guid: 8320e435121390d4189c515a92b02999, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7708023051570384835, guid: 8320e435121390d4189c515a92b02999, type: 3}
       propertyPath: soundAffect
       value: 
@@ -2017,6 +2029,14 @@ PrefabInstance:
       propertyPath: myAudioSource
       value: 
       objectReference: {fileID: 123072329}
+    - target: {fileID: 8328066078013787540, guid: 8320e435121390d4189c515a92b02999, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8328066078013787540, guid: 8320e435121390d4189c515a92b02999, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8328066078013787540, guid: 8320e435121390d4189c515a92b02999, type: 3}
       propertyPath: m_Sprite
       value: 

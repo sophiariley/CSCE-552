@@ -26,18 +26,18 @@ public class Distance : MonoBehaviour
 
         if (Distance_ < 105)
         {
-            Debug.Log("Touch!!");
+            //Debug.Log("Touch!!");
             myAudioSource.volume = 1;
 
         }
         else if (Distance_ < 110)
         {
-            Debug.Log("Very CLOSE");
+            //Debug.Log("Very CLOSE");
             myAudioSource.volume = 0.80f;
         }
         else if (Distance_ < 120)
         {
-            Debug.Log("NOT SO CLOSE");
+            //Debug.Log("NOT SO CLOSE");
             myAudioSource.volume = 0.6f;
         }
         else if (Distance_ < 130)
@@ -46,7 +46,7 @@ public class Distance : MonoBehaviour
         }
         else
         {
-            Debug.Log("FAR!!");
+            //Debug.Log("FAR!!");
             myAudioSource.volume = 0.2f;
         }
 
