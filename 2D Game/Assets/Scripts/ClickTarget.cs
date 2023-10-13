@@ -107,7 +107,7 @@ public class ClickTarget : MonoBehaviour
  
 
     void moveJJ() {
-        targetPrefab.transform.position = center + randPosition();
+        targetPrefab.transform.position = randPosition();
     }
 
     Vector3 randPosition() {
