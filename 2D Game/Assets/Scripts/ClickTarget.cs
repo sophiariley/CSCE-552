@@ -54,6 +54,7 @@ public class ClickTarget : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         rend.color = originalColor;
+                       
                         SceneManager.LoadScene("WinScreen");
                         //SpawnNextCircle();
                     }
@@ -95,6 +96,7 @@ public class ClickTarget : MonoBehaviour
         Color transparentColor = new Color(rend.color.r, rend.color.g, rend.color.b, 0f);
         rend.color = transparentColor;
     }
+ 
 
     void moveJJ() {
         targetPrefab.transform.position = center + randPosition();
