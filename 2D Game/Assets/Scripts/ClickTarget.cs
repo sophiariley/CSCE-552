@@ -16,6 +16,10 @@ public class ClickTarget : MonoBehaviour
     // Don't want to create new variables in update
     public Vector3 mousePos;
     public Vector2 mousePos2D; 
+    // public RaycastHit2D hit;
+
+    float height;
+    float width;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,13 +28,14 @@ public class ClickTarget : MonoBehaviour
 
         rend = this.gameObject.GetComponent<SpriteRenderer>();
         originalColor = rend.color;
-        Color transparentColor = new Color(rend.color.r, rend.color.g, rend.color.b, 0f);
-        rend.color = transparentColor;
+        // Color transparentColor = new Color(rend.color.r, rend.color.g, rend.color.b, 0f);
+        rend.color = new Color(rend.color.r, rend.color.g, rend.color.b, 0f);
 
-        Vector3 pos = randPosition();
-        transform.position = pos;
+        height = camera.orthographicSize;
+        width = camera.aspect * height;
 
-        
+        //Vector3 pos = randPosition();
+        transform.position = randPosition();
 
         StartCoroutine(delayFade(0)); //set to 0 to make sprite invisible
 
@@ -43,7 +48,7 @@ public class ClickTarget : MonoBehaviour
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
-        RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
+         RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
 
         //Checking if what you hit is available
         if (hit.collider != null)
@@ -106,12 +111,12 @@ public class ClickTarget : MonoBehaviour
     }
 
     Vector3 randPosition() {
-        float height = camera.orthographicSize;
-        float width = camera.aspect * height;
-        double x = Random.Range(-width, width);
-        double y = Random.Range(-height, height);
-        Debug.Log("Height: " + height + "\nWidth :" + width);
-        Debug.Log("JJ Height: " + y + "\nJJ Width :" + x);
+        
+        // sorry don't see the need to create these vars so i put everything in the return statement
+        // double x = Random.Range(-width, width);
+        // double y = Random.Range(-height, height);
+        // Debug.Log("Height: " + height + "\nWidth :" + width);
+        // Debug.Log("JJ Height: " + y + "\nJJ Width :" + x);
         //double x = Random.Range(-size.x / 2, size.x / 2);
         //double y = Random.Range(-size.y / 2, size.y / 2);
         
@@ -127,7 +132,10 @@ public class ClickTarget : MonoBehaviour
             y = (-height + 3);
         }*/
 
-        return center + new Vector3((float) x, (float) y, 0);
+        //return center + new Vector3((float) x, (float) y, 0);
+        return center + new Vector3(Random.Range(-width + (width/10), width - (width/10) ), 
+                                    Random.Range(-height + (height/4.5f), height - (height/4.5f) ), 
+                                    0);
     }
 
     // private void OnMouseDown()
