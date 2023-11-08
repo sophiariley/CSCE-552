@@ -508,13 +508,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331510259}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.8, y: 1, z: -6.38}
+  m_LocalRotation: {x: 0.14503175, y: -0, z: -0, w: 0.9894271}
+  m_LocalPosition: {x: 0.2300005, y: 3.17, z: -5.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1631854355}
+  m_LocalEulerAnglesHint: {x: 16.678, y: 0, z: 0}
 --- !u!1 &1631854352
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,6 +526,8 @@ GameObject:
   - component: {fileID: 1631854355}
   - component: {fileID: 1631854354}
   - component: {fileID: 1631854353}
+  - component: {fileID: 1631854356}
+  - component: {fileID: 1631854357}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -546,7 +548,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1631854354}
-  speed: 12
+  speed: 2
+  sprintSpeed: 6
   gravity: -19.62
   jumpHeight: 3
   groundCheck: {fileID: 829093518}
@@ -595,13 +598,40 @@ Transform:
   m_Children:
   - {fileID: 1134372031}
   - {fileID: 829093518}
+  - {fileID: 1331510262}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1631854356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631854352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e0e24fa7bb114459ae44b0b3e23dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 100
+--- !u!114 &1631854357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631854352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca74ddf271b5bd428049e1cbeb508ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMoving: 0
+  movementSpeed: 125
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1331510262}
   - {fileID: 245373354}
   - {fileID: 353146518}
   - {fileID: 1631854355}
