@@ -35,7 +35,7 @@ public class PlayerMovement00 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-        
+        ResetJump();
     }
 
 
@@ -43,7 +43,12 @@ public class PlayerMovement00 : MonoBehaviour
     void Update()
     {
         // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 5f + 0.3f, whatIsGround);
+
+        //TESTING
+        Debug.Log("transform.position: "+transform.position+" Distance of the ray"+(playerHeight * 5f + 0.3f));
+        //TESTING
+
 
         MyInput();
         SpeedControl();
@@ -67,7 +72,7 @@ public class PlayerMovement00 : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
 
         // when to jump
-        if(Input.GetKey(jumpKey) ) //  && grounded && readyToJump 
+        if(Input.GetKey(jumpKey) && readyToJump && grounded ) //   
         {
             readyToJump = false;
 
