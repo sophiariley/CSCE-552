@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerMovement00 : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed;
+    private float moveSpeed;
+    public float walkSpeed;
+    public float sprintSpeed;
     
     public float groundDrag;
 
@@ -16,6 +18,7 @@ public class PlayerMovement00 : MonoBehaviour
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
+    public keyCode sprintKey = KeyCode.LeftShift;
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -30,6 +33,15 @@ public class PlayerMovement00 : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
+
+    public MovementState state;
+    public enum MovementState
+    {
+        walking,
+        sprinting,
+        air
+
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +52,7 @@ public class PlayerMovement00 : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         // ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 5f + 0.3f, whatIsGround);
@@ -52,6 +64,7 @@ public class PlayerMovement00 : MonoBehaviour
 
         MyInput();
         SpeedControl();
+        StateHandler();
 
         // handle drag
         if (grounded)
@@ -81,6 +94,31 @@ public class PlayerMovement00 : MonoBehaviour
             Invoke(nameof(ResetJump), jumpCooldown);
         }
  
+    }
+
+    private void StateHandler()
+    {
+        // Mode - Sprinting
+        if(grounded && Input.GetKey(sprintKey))
+        {
+            state = MovementState.sprinting;
+            moveSpeed = sprintSpeed;
+
+        }
+        // Mode - Walking
+        else if (grounded)
+        {
+            state = MovementState.walking;
+            moveSpeed = walkSpeed;
+        }
+
+        // Mode - Air
+        else
+        {
+            state = MovementState.air;
+        }
+
+
     }
 
     private void MovePlayer()
