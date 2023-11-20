@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -194,7 +194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5957322}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13020314, y: 0.000000008529954, z: -0.0000000011201624, w: 0.9914873}
+  m_LocalRotation: {x: 0.13020314, y: -0.000000008529954, z: 0.0000000011201624, w: 0.9914873}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -402,17 +402,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c8d2af053939664a9ead3e49c3b620c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  walkSpeed: 5
+  sprintSpeed: 10
   groundDrag: 5
-  jumpForce: 12
+  jumpForce: 24
   jumpCooldown: 0.25
   airMultiplier: 0.4
   jumpKey: 32
-  playerHeight: 100
+  sprintKey: 304
+  playerHeight: 4
   whatIsGround:
     serializedVersion: 2
     m_Bits: 128
   orientation: {fileID: 183581812}
+  state: 0
 --- !u!1 &84927997
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,7 +792,7 @@ Transform:
   m_GameObject: {fileID: 183581811}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1, y: 0, z: -3.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -912,11 +915,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ce9d1ed427a037e47980b4c8411ea1a6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce9d1ed427a037e47980b4c8411ea1a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.06
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce9d1ed427a037e47980b4c8411ea1a6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1298,7 +1301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344791351}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13020314, y: 0.00000003075518, z: -0.000000004038803, w: 0.9914874}
+  m_LocalRotation: {x: 0.13020314, y: -0.00000003075518, z: 0.000000004038803, w: 0.9914874}
   m_LocalPosition: {x: -5.2, y: 9.49, z: -91.479996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1987,7 +1990,7 @@ GameObject:
   - component: {fileID: 395057267}
   m_Layer: 7
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5581,7 +5584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410818313}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1532659, y: -0.000000008501545, z: 0.000000001318576, w: 0.988185}
+  m_LocalRotation: {x: 0.1532659, y: 0.000000008501543, z: -0.0000000013185757, w: 0.988185}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6915,7 +6918,7 @@ Transform:
   m_GameObject: {fileID: 1608609943}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0.25, z: -0.4}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []

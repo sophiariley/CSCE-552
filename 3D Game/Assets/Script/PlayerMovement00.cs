@@ -18,7 +18,7 @@ public class PlayerMovement00 : MonoBehaviour
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
-    public keyCode sprintKey = KeyCode.LeftShift;
+    public KeyCode sprintKey = KeyCode.LeftShift;
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -55,10 +55,10 @@ public class PlayerMovement00 : MonoBehaviour
     private void Update()
     {
         // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 5f + 0.3f, whatIsGround);
-
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 1f + 0.3f, whatIsGround);
+        //grounded = CheckGrounded();
         //TESTING
-        Debug.Log("transform.position: "+transform.position+" Distance of the ray"+(playerHeight * 5f + 0.3f));
+        Debug.Log("transform.position: "+transform.position+" Distance of the ray"+(playerHeight * 1f + 0.3f));
         //TESTING
 
 
@@ -73,7 +73,29 @@ public class PlayerMovement00 : MonoBehaviour
             rb.drag = 0;
     }
 
-        private void FixedUpdate()
+    // private bool CheckGrounded()
+    // {
+    //     // Create a ray pointing downwards from the player's position
+    //     Ray ray = new Ray(transform.position, Vector3.down);
+
+    //     // Set the ray's length to be slightly longer than the player height
+    //     float rayLength = playerHeight * 0.5f + 0.3f;
+
+    //     // Check for colliders in the downward direction
+    //     RaycastHit hit;
+    //     if (Physics.Raycast(ray, out hit, rayLength))
+    //     {
+    //         // Check if the collider is not a trigger
+    //         if (!hit.collider.isTrigger)
+    //         {
+    //             return true;
+    //         }
+    //     }
+
+    //     return false;
+    // }
+
+    private void FixedUpdate()
     {
         MovePlayer();
     }
