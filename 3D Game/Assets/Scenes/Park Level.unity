@@ -194,7 +194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5957322}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13020314, y: 0.000000008529954, z: -0.0000000011201624, w: 0.9914873}
+  m_LocalRotation: {x: 0.13020314, y: -0.000000008529954, z: 0.0000000011201624, w: 0.9914873}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 55612477}
   - component: {fileID: 55612476}
   - component: {fileID: 55612475}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,9 @@ GameObject:
   - component: {fileID: 63230209}
   - component: {fileID: 63230212}
   - component: {fileID: 63230213}
-  m_Layer: 0
+  - component: {fileID: 63230215}
+  - component: {fileID: 63230214}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +343,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1608609944}
   - {fileID: 183581812}
   - {fileID: 497814071}
   m_Father: {fileID: 0}
@@ -416,6 +417,83 @@ MonoBehaviour:
     m_Bits: 128
   orientation: {fileID: 183581812}
   state: 0
+--- !u!114 &63230214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63230207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c0444eac287b7489ee67e20d2ecb70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visionRadius: 0
+  visionAngle: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  visibleTargets: []
+--- !u!136 &63230215
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63230207}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &80247067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 80247068}
+  m_Layer: 0
+  m_Name: Dogs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &80247068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80247067}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 600249921}
+  - {fileID: 1499146752}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &84927997
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +506,7 @@ GameObject:
   - component: {fileID: 84928001}
   - component: {fileID: 84928000}
   - component: {fileID: 84927999}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Bench (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +611,7 @@ GameObject:
   - component: {fileID: 142214660}
   - component: {fileID: 142214659}
   - component: {fileID: 142214658}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Bench (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -638,7 +716,7 @@ GameObject:
   - component: {fileID: 163049269}
   - component: {fileID: 163049268}
   - component: {fileID: 163049267}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -742,7 +820,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 181783334}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hedge Group 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -776,7 +854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 183581812}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Orientation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +888,7 @@ GameObject:
   - component: {fileID: 231068063}
   - component: {fileID: 231068062}
   - component: {fileID: 231068061}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -917,7 +995,7 @@ GameObject:
   - component: {fileID: 294077956}
   - component: {fileID: 294077955}
   - component: {fileID: 294077954}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1022,7 +1100,7 @@ GameObject:
   - component: {fileID: 323190686}
   - component: {fileID: 323190685}
   - component: {fileID: 323190684}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1124,7 +1202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 330681364}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Roads
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1236,7 +1314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344791351}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13020314, y: 0.00000003075518, z: -0.000000004038803, w: 0.9914874}
+  m_LocalRotation: {x: 0.13020314, y: -0.00000003075518, z: 0.000000004038803, w: 0.9914874}
   m_LocalPosition: {x: -5.2, y: 9.49, z: -91.479996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1289,7 +1367,7 @@ GameObject:
   - component: {fileID: 351636776}
   - component: {fileID: 351636775}
   - component: {fileID: 351636774}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1396,7 +1474,7 @@ GameObject:
   - component: {fileID: 355661548}
   - component: {fileID: 355661547}
   - component: {fileID: 355661546}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Fence (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1501,7 +1579,7 @@ GameObject:
   - component: {fileID: 357065944}
   - component: {fileID: 357065943}
   - component: {fileID: 357065942}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1608,7 +1686,7 @@ GameObject:
   - component: {fileID: 360811199}
   - component: {fileID: 360811198}
   - component: {fileID: 360811197}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Buulding  (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1713,7 +1791,7 @@ GameObject:
   - component: {fileID: 362723383}
   - component: {fileID: 362723382}
   - component: {fileID: 362723381}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Bench (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1818,7 +1896,7 @@ GameObject:
   - component: {fileID: 362971286}
   - component: {fileID: 362971285}
   - component: {fileID: 362971284}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2038,7 +2116,7 @@ GameObject:
   - component: {fileID: 441513750}
   - component: {fileID: 441513749}
   - component: {fileID: 441513748}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2417,7 +2495,7 @@ GameObject:
   - component: {fileID: 558963074}
   - component: {fileID: 558963073}
   - component: {fileID: 558963072}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2604,6 +2682,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &600249920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+  m_PrefabInstance: {fileID: 897326693}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &600249921 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+  m_PrefabInstance: {fileID: 897326693}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &600249922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600249920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c0444eac287b7489ee67e20d2ecb70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visionRadius: 20
+  visionAngle: 120
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 256
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 512
+  visibleTargets: []
 --- !u!1 &600646747
 GameObject:
   m_ObjectHideFlags: 0
@@ -2616,7 +2725,7 @@ GameObject:
   - component: {fileID: 600646751}
   - component: {fileID: 600646750}
   - component: {fileID: 600646749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2709,13 +2818,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600646747}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &622313385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 622313386}
+  m_Layer: 8
+  m_Name: Ducklings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &622313386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622313385}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2119727042}
+  - {fileID: 1799567443}
+  - {fileID: 910165085}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &677356947
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 80247068}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2727,23 +2870,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 33.4
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2751,7 +2894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2761,10 +2904,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Patrol Dog
       objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1499146753}
   m_SourcePrefab: {fileID: 100100000, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
 --- !u!1 &688249360
 GameObject:
@@ -2778,7 +2940,7 @@ GameObject:
   - component: {fileID: 688249364}
   - component: {fileID: 688249363}
   - component: {fileID: 688249362}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2882,7 +3044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 700321698}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2921,7 +3083,7 @@ GameObject:
   - component: {fileID: 720444901}
   - component: {fileID: 720444900}
   - component: {fileID: 720444899}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3028,7 +3190,7 @@ GameObject:
   - component: {fileID: 732734703}
   - component: {fileID: 732734702}
   - component: {fileID: 732734701}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3132,7 +3294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 784901918}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tree Group 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3169,7 +3331,7 @@ GameObject:
   - component: {fileID: 809339126}
   - component: {fileID: 809339125}
   - component: {fileID: 809339124}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3273,7 +3435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 823384219}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tree Group 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3307,7 +3469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 842376502}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedges
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3343,7 +3505,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 859210190}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Park Layout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3384,7 +3546,7 @@ GameObject:
   - component: {fileID: 859220522}
   - component: {fileID: 859220521}
   - component: {fileID: 859220520}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Road (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3546,7 +3708,7 @@ GameObject:
   - component: {fileID: 872862118}
   - component: {fileID: 872862117}
   - component: {fileID: 872862116}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Fence (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3651,7 +3813,7 @@ GameObject:
   - component: {fileID: 873037160}
   - component: {fileID: 873037159}
   - component: {fileID: 873037158}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'Temp Road '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3753,7 +3915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 891825099}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tree Group 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3784,7 +3946,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 80247068}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3800,7 +3962,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3808,7 +3970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalRotation.z
@@ -3820,7 +3982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3830,10 +3992,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hedge Dog
       objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 600249922}
   m_SourcePrefab: {fileID: 100100000, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
 --- !u!1 &908211951
 GameObject:
@@ -3847,7 +4028,7 @@ GameObject:
   - component: {fileID: 908211955}
   - component: {fileID: 908211954}
   - component: {fileID: 908211953}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3942,6 +4123,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908211951}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &910165084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+  m_PrefabInstance: {fileID: 1900100382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &910165085 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+  m_PrefabInstance: {fileID: 1900100382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &910165086
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910165084}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &910791758
 GameObject:
   m_ObjectHideFlags: 0
@@ -3954,7 +4168,7 @@ GameObject:
   - component: {fileID: 910791762}
   - component: {fileID: 910791761}
   - component: {fileID: 910791760}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4163,7 +4377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 977913672}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Buildings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4198,7 +4412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 987511512}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Benches
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4231,7 +4445,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 622313386}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalScale.x
@@ -4263,7 +4477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalRotation.y
@@ -4293,10 +4507,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hedge Duckling
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2119727043}
   m_SourcePrefab: {fileID: 100100000, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
 --- !u!1 &1065857456
 GameObject:
@@ -4310,7 +4535,7 @@ GameObject:
   - component: {fileID: 1065857460}
   - component: {fileID: 1065857459}
   - component: {fileID: 1065857458}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4415,7 +4640,7 @@ GameObject:
   - component: {fileID: 1071654729}
   - component: {fileID: 1071654728}
   - component: {fileID: 1071654727}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree w/ Duckling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4522,7 +4747,7 @@ GameObject:
   - component: {fileID: 1080809343}
   - component: {fileID: 1080809342}
   - component: {fileID: 1080809341}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Fence (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4627,7 +4852,7 @@ GameObject:
   - component: {fileID: 1114911189}
   - component: {fileID: 1114911188}
   - component: {fileID: 1114911187}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4732,7 +4957,7 @@ GameObject:
   - component: {fileID: 1195325051}
   - component: {fileID: 1195325050}
   - component: {fileID: 1195325049}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4839,7 +5064,7 @@ GameObject:
   - component: {fileID: 1216216286}
   - component: {fileID: 1216216285}
   - component: {fileID: 1216216284}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Road (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4941,7 +5166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1221850837}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tree Group 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4978,7 +5203,7 @@ GameObject:
   - component: {fileID: 1231146202}
   - component: {fileID: 1231146201}
   - component: {fileID: 1231146200}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Buulding  (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5286,7 +5511,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1265147865}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Fences
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5322,7 +5547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1343353508}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hedge Group 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5360,7 +5585,7 @@ GameObject:
   - component: {fileID: 1370902043}
   - component: {fileID: 1370902042}
   - component: {fileID: 1370902041}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5544,7 +5769,7 @@ GameObject:
   - component: {fileID: 1436965404}
   - component: {fileID: 1436965403}
   - component: {fileID: 1436965402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5776,7 +6001,7 @@ GameObject:
   - component: {fileID: 1470194614}
   - component: {fileID: 1470194613}
   - component: {fileID: 1470194612}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Fence (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5881,7 +6106,7 @@ GameObject:
   - component: {fileID: 1473314074}
   - component: {fileID: 1473314073}
   - component: {fileID: 1473314072}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5988,7 +6213,7 @@ GameObject:
   - component: {fileID: 1478944920}
   - component: {fileID: 1478944919}
   - component: {fileID: 1478944918}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6090,7 +6315,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1485812087}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Big Ol Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6120,6 +6345,37 @@ Transform:
   - {fileID: 231068060}
   m_Father: {fileID: 700321698}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1499146751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+  m_PrefabInstance: {fileID: 677356947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1499146752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 750d26860cffe864db50a8d72b821ac7, type: 3}
+  m_PrefabInstance: {fileID: 677356947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1499146753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499146751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c0444eac287b7489ee67e20d2ecb70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visionRadius: 20
+  visionAngle: 120
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 256
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 512
+  visibleTargets: []
 --- !u!1 &1514844645
 GameObject:
   m_ObjectHideFlags: 0
@@ -6132,7 +6388,7 @@ GameObject:
   - component: {fileID: 1514844649}
   - component: {fileID: 1514844648}
   - component: {fileID: 1514844647}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6239,7 +6495,7 @@ GameObject:
   - component: {fileID: 1529707152}
   - component: {fileID: 1529707151}
   - component: {fileID: 1529707150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6344,7 +6600,7 @@ GameObject:
   - component: {fileID: 1549678771}
   - component: {fileID: 1549678770}
   - component: {fileID: 1549678769}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Bench (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6449,7 +6705,7 @@ GameObject:
   - component: {fileID: 1555619269}
   - component: {fileID: 1555619268}
   - component: {fileID: 1555619267}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6548,11 +6804,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 622313386}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.41
+      value: 0.41000003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalScale.y
@@ -6560,7 +6816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.41
+      value: 0.41000003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6580,7 +6836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalRotation.y
@@ -6588,7 +6844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6610,10 +6866,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corner Duckling
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1799567444}
   m_SourcePrefab: {fileID: 100100000, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
 --- !u!1 &1569626091
 GameObject:
@@ -6627,7 +6894,7 @@ GameObject:
   - component: {fileID: 1569626095}
   - component: {fileID: 1569626094}
   - component: {fileID: 1569626093}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6732,7 +6999,7 @@ GameObject:
   - component: {fileID: 1596489673}
   - component: {fileID: 1596489672}
   - component: {fileID: 1596489671}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6825,113 +7092,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596489669}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1608609943
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1608609944}
-  - component: {fileID: 1608609947}
-  - component: {fileID: 1608609946}
-  - component: {fileID: 1608609945}
-  m_Layer: 0
-  m_Name: Capsule
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1608609944
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608609943}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 63230208}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &1608609945
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608609943}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1608609946
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608609943}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1608609947
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608609943}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1713498076
 GameObject:
   m_ObjectHideFlags: 0
@@ -6944,7 +7104,7 @@ GameObject:
   - component: {fileID: 1713498080}
   - component: {fileID: 1713498079}
   - component: {fileID: 1713498078}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7051,7 +7211,7 @@ GameObject:
   - component: {fileID: 1726750636}
   - component: {fileID: 1726750635}
   - component: {fileID: 1726750634}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Road  (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7156,7 +7316,7 @@ GameObject:
   - component: {fileID: 1732289011}
   - component: {fileID: 1732289010}
   - component: {fileID: 1732289009}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7251,6 +7411,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732289007}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1799567442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+  m_PrefabInstance: {fileID: 1558206151}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1799567443 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+  m_PrefabInstance: {fileID: 1558206151}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1799567444
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799567442}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1826542283
 GameObject:
   m_ObjectHideFlags: 0
@@ -7263,7 +7456,7 @@ GameObject:
   - component: {fileID: 1826542287}
   - component: {fileID: 1826542286}
   - component: {fileID: 1826542285}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7368,7 +7561,7 @@ GameObject:
   - component: {fileID: 1868662714}
   - component: {fileID: 1868662713}
   - component: {fileID: 1868662712}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7473,7 +7666,7 @@ GameObject:
   - component: {fileID: 1878686090}
   - component: {fileID: 1878686089}
   - component: {fileID: 1878686088}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Bench
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7572,7 +7765,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 622313386}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalScale.x
@@ -7604,7 +7797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalRotation.y
@@ -7612,7 +7805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7634,10 +7827,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Duckling
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 910165086}
   m_SourcePrefab: {fileID: 100100000, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
 --- !u!1 &1913676937
 GameObject:
@@ -7651,7 +7855,7 @@ GameObject:
   - component: {fileID: 1913676941}
   - component: {fileID: 1913676940}
   - component: {fileID: 1913676939}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Buulding  (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7756,7 +7960,7 @@ GameObject:
   - component: {fileID: 1914570588}
   - component: {fileID: 1914570587}
   - component: {fileID: 1914570586}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Hedge (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7861,7 +8065,7 @@ GameObject:
   - component: {fileID: 1931927985}
   - component: {fileID: 1931927984}
   - component: {fileID: 1931927983}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7968,7 +8172,7 @@ GameObject:
   - component: {fileID: 1973715706}
   - component: {fileID: 1973715705}
   - component: {fileID: 1973715704}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8072,7 +8276,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1980917872}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hedge Group 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8106,7 +8310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2014362001}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hedge Group 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8183,6 +8387,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ProtagFINALArmatureDONE
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d779b9a98adbf494fa1efad7f08b2cda, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: d779b9a98adbf494fa1efad7f08b2cda, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8200,7 +8412,7 @@ GameObject:
   - component: {fileID: 2097787728}
   - component: {fileID: 2097787727}
   - component: {fileID: 2097787726}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'Temp Buulding '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8302,7 +8514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2114614046}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hedge Group 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8327,6 +8539,39 @@ Transform:
   - {fileID: 1478944917}
   m_Father: {fileID: 842376502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2119727041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+  m_PrefabInstance: {fileID: 1041368504}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2119727042 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
+  m_PrefabInstance: {fileID: 1041368504}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &2119727043
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119727041}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2143118624
 GameObject:
   m_ObjectHideFlags: 0
@@ -8339,7 +8584,7 @@ GameObject:
   - component: {fileID: 2143118628}
   - component: {fileID: 2143118627}
   - component: {fileID: 2143118626}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temp Tree (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8442,12 +8687,9 @@ SceneRoots:
   - {fileID: 580755873}
   - {fileID: 395057266}
   - {fileID: 859210190}
-  - {fileID: 897326693}
-  - {fileID: 677356947}
-  - {fileID: 1041368504}
-  - {fileID: 1558206151}
-  - {fileID: 1900100382}
   - {fileID: 862522154}
   - {fileID: 63230208}
   - {fileID: 506015866}
   - {fileID: 939291586}
+  - {fileID: 80247068}
+  - {fileID: 622313386}
