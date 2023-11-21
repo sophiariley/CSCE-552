@@ -58,7 +58,7 @@ public class PlayerMovement00 : MonoBehaviour
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 1f + 0.3f, whatIsGround);
         //grounded = CheckGrounded();
         //TESTING
-        Debug.Log("transform.position: "+transform.position+" Distance of the ray"+(playerHeight * 1f + 0.3f));
+        Debug.Log("transform.position: " + transform.position + "\nDistance of the ray: " + (playerHeight * 1f + 0.3f) + "\nGrounded: " + grounded);
         //TESTING
 
 
