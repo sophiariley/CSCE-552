@@ -66,13 +66,13 @@ public class DetectionCircle : MonoBehaviour
             viewPoints.Add(newViewCast.point);
         }
 
-        int vertexCount = viewPoints.Count + 1;
+        /*int vertexCount = viewPoints.Count + 1;
         Vector3[] vertices = new Vector3[vertexCount];
         int[] triangles = new int[(vertexCount - 2) * 3];
 
         vertices[0] = Vector3.zero;
-        for (int i = 0; i < vertexCount; i++) {
-            vertices[i + 1] = viewPoints[i];
+        for (int i = 0; i < vertexCount - 1; i++) {
+            vertices[i + 1] = transform.InverseTransformPoint(viewPoints[i]);
 
             if (i < vertexCount - 2) {
                 triangles[i * 3] = 0;
@@ -84,7 +84,7 @@ public class DetectionCircle : MonoBehaviour
         viewMesh.Clear();
         viewMesh.vertices = vertices;
         viewMesh.triangles = triangles;
-        viewMesh.RecalculateNormals();
+        viewMesh.RecalculateNormals();*/
     }
 
     ViewCastInfo ViewCast(float globalAngle) {
