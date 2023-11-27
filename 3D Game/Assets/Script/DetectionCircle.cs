@@ -34,7 +34,7 @@ public class DetectionCircle : MonoBehaviour
     }
 
 
-    void Update() {
+    void LateUpdate() {
         drawFOV();
     }
 
@@ -66,7 +66,7 @@ public class DetectionCircle : MonoBehaviour
             viewPoints.Add(newViewCast.point);
         }
 
-        /*int vertexCount = viewPoints.Count + 1;
+        int vertexCount = viewPoints.Count + 1;
         Vector3[] vertices = new Vector3[vertexCount];
         int[] triangles = new int[(vertexCount - 2) * 3];
 
@@ -84,7 +84,7 @@ public class DetectionCircle : MonoBehaviour
         viewMesh.Clear();
         viewMesh.vertices = vertices;
         viewMesh.triangles = triangles;
-        viewMesh.RecalculateNormals();*/
+        viewMesh.RecalculateNormals();
     }
 
     ViewCastInfo ViewCast(float globalAngle) {
