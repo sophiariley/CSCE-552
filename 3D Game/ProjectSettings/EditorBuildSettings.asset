@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Title screen.unity
+    guid: c8189f34c7055e145aae0a93fcb37448
+  - enabled: 1
+    path: Assets/Scenes/Park Level.unity
+    guid: 2852937b8ed8e76469780e04bc85b971
   m_configObjects: {}
