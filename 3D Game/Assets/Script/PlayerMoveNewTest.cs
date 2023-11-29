@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// TODO: fix grounding
+// TODO:
+// fix grounding
+// enable jump
+// enable sprint
 public class PlayerMoveNewTest : MonoBehaviour
 {
 
     public CharacterController controller;
-    public Transform camera;
+    public Transform cam;
     Rigidbody rb;
 
     public float speed = 6f;
@@ -50,7 +53,7 @@ public class PlayerMoveNewTest : MonoBehaviour
 
         if(direction.magnitude >= 0.1f)
         {
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + camera.eulerAngles.y;
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref smoothTurninVelocity, smoothTurninTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
