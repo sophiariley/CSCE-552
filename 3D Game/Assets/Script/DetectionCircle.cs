@@ -50,6 +50,9 @@ public class DetectionCircle : MonoBehaviour
 
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask)) { //Sees a target in range
                     visibleTargets.Add(target);
+                    if (target.gameObject.tag == "Duckling") {
+                        target.gameObject.GetComponent<NavigationScript>()._isFollowing = false;
+                    }
                 }
             }
         }
