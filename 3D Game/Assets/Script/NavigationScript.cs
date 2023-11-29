@@ -16,6 +16,14 @@ public class NavigationScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.destination = player.position;
+        
+        float distance = Vector3.Distance (player.transform.position, transform.position);
+        Debug.Log("Distance: " + distance);
+        if (distance <= 30) 
+        {
+            agent.destination = player.position;
+
+        }
+        
     }
 }
