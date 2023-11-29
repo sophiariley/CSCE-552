@@ -27,16 +27,6 @@ public class TitleScreen : MonoBehaviour
         SceneManager.LoadScene(gameScene);
     }
 
-    public void showInstructions()
-    {
-
-    }
-
-    public void showCredits()
-    {
-
-    }
-
     public void quitGame()
     {
         Application.Quit();
