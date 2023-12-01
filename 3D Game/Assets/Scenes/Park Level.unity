@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1112,7 +1112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.380003
+      value: 3.6000004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1361,7 +1361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.56
+      value: -32.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4156,7 +4156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.3
+      value: 36.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4385,7 +4385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.56
+      value: -32.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4976,7 +4976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 842376502}
   m_Layer: 9
-  m_Name: Temp Hedges
+  m_Name: Hedges
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5622,7 +5622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.3
+      value: 36.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6433,7 +6433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.380003
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8152,7 +8152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.56
+      value: -32.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9354,7 +9354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.38
+      value: 3.5999975
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33ef5b6498bd50e4fab9e5e18bbfa96a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10257,19 +10257,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -69.52
+      value: -32.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.38
+      value: 41.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7660445
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -10277,7 +10277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6427876
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalRotation.z
@@ -10289,7 +10289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -80
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -10301,7 +10301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_Name
-      value: Tree Duckling
+      value: Duckling on da bench
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_Layer
