@@ -30,6 +30,11 @@ public class NavigationScript : MonoBehaviour
         if (_isFollowing == true) {
             //Debug.Log("Distance: " + distance);
             agent.destination = player.position;
+            if (Input.GetKeyDown(KeyCode.LeftShift)) {
+                transform.gameObject.GetComponent<NavMeshAgent>().speed = 10f;
+            } else if (Input.GetKeyUp(KeyCode.LeftShift)) {
+                transform.gameObject.GetComponent<NavMeshAgent>().speed = 5f;
+            }
         }
         
         

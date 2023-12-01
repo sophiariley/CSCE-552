@@ -18,6 +18,7 @@ public class DetectionCircle : MonoBehaviour
 
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
+    private int _numberOfDucklings = 3;
 
     void Start() {
         viewMesh = new Mesh();
@@ -50,9 +51,12 @@ public class DetectionCircle : MonoBehaviour
 
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask)) { //Sees a target in range
                     visibleTargets.Add(target);
-                    if (target.gameObject.tag == "Duckling") {
+                    if (transform.gameObject.tag == "Dog" && target.gameObject.tag == "Duckling") {
                         target.gameObject.GetComponent<NavigationScript>()._isFollowing = false;
                     }
+                    /*if (transform.gameObject.tag == "Mother Duck" && visibleTargets.Length == _numberOfDucklings) {
+
+                    }*/
                 }
             }
         }
