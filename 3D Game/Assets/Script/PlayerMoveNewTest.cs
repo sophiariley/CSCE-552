@@ -65,8 +65,8 @@ public class PlayerMoveNewTest : MonoBehaviour
             velocity.y = -2f; // Reset velocity when grounded to prevent accumulating gravity
         }
         // TESTING
-        Debug.Log("Ground Distance: " + groundDistance);
-        Debug.Log("Is Grounded: " + isGrounded);
+        // Debug.Log("Ground Distance: " + groundDistance);
+        // Debug.Log("Is Grounded: " + isGrounded);
         // TESTING
 
 

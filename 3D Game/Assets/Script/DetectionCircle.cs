@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DetectionCircle : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class DetectionCircle : MonoBehaviour
 
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
-    private int _numberOfDucklings = 3;
+    private int _numberOfDucklings = 2;
 
     void Start() {
         viewMesh = new Mesh();
@@ -54,9 +55,12 @@ public class DetectionCircle : MonoBehaviour
                     if (transform.gameObject.tag == "Dog" && target.gameObject.tag == "Duckling") {
                         target.gameObject.GetComponent<NavigationScript>()._isFollowing = false;
                     }
-                    /*if (transform.gameObject.tag == "Mother Duck" && visibleTargets.Length == _numberOfDucklings) {
+                    if (transform.gameObject.tag == "Mother Duck" && visibleTargets.Count == _numberOfDucklings) {
+                        
+                        Debug.Log("You WIN!!");
+                        SceneManager.LoadScene("Win screen");
 
-                    }*/
+                    }
                 }
             }
         }
