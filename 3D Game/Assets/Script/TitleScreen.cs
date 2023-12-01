@@ -7,8 +7,6 @@ public class TitleScreen : MonoBehaviour
 {
 
     public string gameScene;
-    public string creditMenu;
-    public string instructionMenu;
 
     // Start is called before the first frame update
     void Start()
