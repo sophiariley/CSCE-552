@@ -6,8 +6,6 @@ TagManager:
   tags:
   - Ground
   - Duckling
-  - Dog
-  - Mother Duck
   layers:
   - Default
   - TransparentFX

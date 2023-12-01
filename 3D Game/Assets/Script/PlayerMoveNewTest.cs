@@ -10,8 +10,8 @@ public class PlayerMoveNewTest : MonoBehaviour
 {
 
     public CharacterController controller;
-    public Transform camera;
-    //Rigidbody rb;
+    public Transform cam;
+    Rigidbody rb;
 
     public float speed = 6f;
 
@@ -19,32 +19,32 @@ public class PlayerMoveNewTest : MonoBehaviour
     float smoothTurninVelocity;
 
 
-    // [Header("Ground Check")]
-    // public float playerHeight;
-    // public LayerMask whatIsGround;
-    // bool grounded;
+    [Header("Ground Check")]
+    public float playerHeight;
+    public LayerMask whatIsGround;
+    bool grounded;
 
-    // public float groundDrag;
+    public float groundDrag;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        // Cursor.lockState = CursorLockMode.Locked;
-        // Cursor.visible = false;
-        // rb = GetComponent<Rigidbody>();
-        // rb.freezeRotation = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        rb = GetComponent<Rigidbody>();
+        rb.freezeRotation = true;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        // grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 1f + 0.3f, whatIsGround);
-        // if (grounded)
-        //     rb.drag = groundDrag;
-        // else
-        //     rb.drag = 0;
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 1f + 0.3f, whatIsGround);
+        if (grounded)
+            rb.drag = groundDrag;
+        else
+            rb.drag = 0;
 
 
         float horizontal = Input.GetAxisRaw("Horizontal");
