@@ -811,6 +811,7 @@ GameObject:
   - component: {fileID: 63230217}
   - component: {fileID: 63230216}
   - component: {fileID: 63230218}
+  - component: {fileID: 63230219}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -923,6 +924,18 @@ MonoBehaviour:
   rotationSpeed: 10
   jumpHeight: 2
   gravity: 9.81
+--- !u!114 &63230219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63230207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494c34c239b94fa47a7016cbc9b4eda9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &80247067
 GameObject:
   m_ObjectHideFlags: 0
@@ -7276,7 +7289,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_UseGeometry: 0
   m_DefaultArea: 0
-  m_GenerateLinks: 0
+  m_GenerateLinks: 1
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
   m_OverrideTileSize: 0
@@ -10841,11 +10854,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.08
+      value: 1.97
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 44.47
+      value: 41.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83f0fae59491e304ba6fe7245a68630a, type: 3}
       propertyPath: m_LocalRotation.w
