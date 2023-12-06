@@ -19,7 +19,7 @@ public class DetectionCircle : MonoBehaviour
 
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
-    private int _numberOfDucklings = 3;
+    private int _numberOfDucklings = 4;
 
     void Start() {
         viewMesh = new Mesh();
