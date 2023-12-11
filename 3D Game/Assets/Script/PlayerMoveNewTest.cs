@@ -24,6 +24,7 @@ public class PlayerMoveNewTest : MonoBehaviour
     void Update()
     {
         CheckGrounded();
+        BroadcastMessage("isGrounded", isGrounded);
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");

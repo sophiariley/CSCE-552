@@ -54,4 +54,8 @@ public class PlayerAnimator : MonoBehaviour
             playerAnimator.SetBool("blocking", false);
         }
     }
+
+    void isGrounded(bool isGrounded) {
+        playerAnimator.SetBool("isGrounded",isGrounded);
+    }
 }
