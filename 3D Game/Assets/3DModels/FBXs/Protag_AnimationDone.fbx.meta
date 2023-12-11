@@ -95,7 +95,7 @@ ModelImporter:
       takeName: Armature|ArmatureAction
       internalID: 4594303134292970328
       firstFrame: 124
-      lastFrame: 161
+      lastFrame: 160
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -123,8 +123,8 @@ ModelImporter:
       name: Swipe
       takeName: Armature|ArmatureAction
       internalID: 3696890337287820257
-      firstFrame: 162
-      lastFrame: 178
+      firstFrame: 161
+      lastFrame: 177
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -152,8 +152,8 @@ ModelImporter:
       name: Block
       takeName: Armature|ArmatureAction
       internalID: 4112734611506483818
-      firstFrame: 179
-      lastFrame: 184
+      firstFrame: 178
+      lastFrame: 183
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
