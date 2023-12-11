@@ -22,9 +22,16 @@ public class NavigationScript : MonoBehaviour
         float distance = Vector3.Distance (player.transform.position, transform.position);
         if (Input.GetKeyDown("e") && distance < 3) {
             _isFollowing = true;
+            BroadcastMessage("pickedUp");
         } else if (_isFollowing == false) {
             agent.destination = _startPos;
             _isFollowing = false;
+
+            if(agent.speed == 0) {
+                BroadcastMessage("shivering");
+            } else {
+                BroadcastMessage("walkingBack");
+            }
         }
 
         if (_isFollowing == true) {
