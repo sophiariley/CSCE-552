@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public CharacterController charController;
+    public GameObject hedgeDuckling;
     public void SavePlayer()
     {
         SaveSystem.SavePlayer(this);
@@ -30,6 +31,16 @@ public class Player : MonoBehaviour
         Debug.Log("player: loadPlayer(): new y = " + data.position[1]);
         Debug.Log("player: loadPlayer(): new z = " + data.position[2]);
 
+        Vector3 new_hedgeDuckling_position;
+ 
+        new_hedgeDuckling_position.x = data.hedgeDucklingPosition[0];
+        new_hedgeDuckling_position.y = data.hedgeDucklingPosition[1];
+        new_hedgeDuckling_position.z = data.hedgeDucklingPosition[2];
+        hedgeDuckling.transform.position = new_hedgeDuckling_position;
+
+        bool new_hedgeDucklingFollow = data.hedgeDucklingFollow;
+        hedgeDuckling.GetComponent<NavigationScript>()._isFollowing = new_hedgeDucklingFollow;
+        
 
         
         

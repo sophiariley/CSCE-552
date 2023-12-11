@@ -1007,6 +1007,7 @@ GameObject:
   - component: {fileID: 63230208}
   - component: {fileID: 63230214}
   - component: {fileID: 63230217}
+  - component: {fileID: 63230225}
   - component: {fileID: 63230216}
   - component: {fileID: 63230219}
   - component: {fileID: 63230220}
@@ -1014,7 +1015,6 @@ GameObject:
   - component: {fileID: 63230222}
   - component: {fileID: 63230223}
   - component: {fileID: 63230224}
-
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1433,6 +1433,20 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63230207}
   m_Enabled: 1
+--- !u!114 &63230225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63230207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd1f7d222cfdf1e48938a298605a40ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charController: {fileID: 63230217}
+  hedgeDuckling: {fileID: 203367963}
 --- !u!1 &69682622
 GameObject:
   m_ObjectHideFlags: 0
@@ -7367,7 +7381,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 63230220}
+      - m_Target: {fileID: 63230225}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: SavePlayer
         m_Mode: 1
@@ -21294,9 +21308,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 281855664364225751, guid: d004c6a56a6ffbb4a93dc978d4e3fa55, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1410164209}
-    - targetCorrespondingSourceObject: {fileID: -2045257923548263128, guid: d004c6a56a6ffbb4a93dc978d4e3fa55, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1886242149}
     - targetCorrespondingSourceObject: {fileID: -6763858364670572316, guid: d004c6a56a6ffbb4a93dc978d4e3fa55, type: 3}
       insertIndex: -1
       addedObject: {fileID: 929677397}
@@ -21384,7 +21395,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 63230220}
+      - m_Target: {fileID: 63230225}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: LoadPlayer
         m_Mode: 1
@@ -27250,13 +27261,6 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: ba6b4dd7f4ce9e741a0acec0a9ca9b8e, type: 3}
 --- !u!1 &1891896350
 GameObject:
---- !u!1 &1886242145 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -2045257923548263128, guid: d004c6a56a6ffbb4a93dc978d4e3fa55, type: 3}
-  m_PrefabInstance: {fileID: 1396389233}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1886242149
-BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -27266,8 +27270,8 @@ BoxCollider:
   - component: {fileID: 1891896351}
   - component: {fileID: 1891896353}
   - component: {fileID: 1891896352}
-  m_Layer: 5
-  m_Name: Text (TMP)
+  m_Layer: 0
+  m_Name: Text(TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27389,21 +27393,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891896350}
   m_CullTransparentMesh: 1
-  m_GameObject: {fileID: 1886242145}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.023, y: 0.004000002, z: 0.013999998}
-  m_Center: {x: -0.0004999405, y: 0.025999997, z: 0.0069999974}
 --- !u!1001 &1897947497
 PrefabInstance:
   m_ObjectHideFlags: 0
