@@ -1447,6 +1447,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charController: {fileID: 63230217}
   hedgeDuckling: {fileID: 203367963}
+  hidingDuckling: {fileID: 1799567442}
+  treeDuckling: {fileID: 2053030662}
+  benchDuckling: {fileID: 910165084}
 --- !u!1 &69682622
 GameObject:
   m_ObjectHideFlags: 0
