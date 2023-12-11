@@ -1010,13 +1010,11 @@ GameObject:
   - component: {fileID: 63230216}
   - component: {fileID: 63230219}
   - component: {fileID: 63230220}
-<<<<<<< HEAD
-=======
   - component: {fileID: 63230221}
   - component: {fileID: 63230222}
   - component: {fileID: 63230223}
   - component: {fileID: 63230224}
->>>>>>> 12c82e3ec7a04226bf64a54f8532dede63da5acc
+
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1133,11 +1131,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 63230207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: dd1f7d222cfdf1e48938a298605a40ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-=======
   m_Script: {fileID: 11500000, guid: 6f52b0b89bb9e9040b50d0a22ce733cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1440,7 +1433,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63230207}
   m_Enabled: 1
->>>>>>> 12c82e3ec7a04226bf64a54f8532dede63da5acc
 --- !u!1 &69682622
 GameObject:
   m_ObjectHideFlags: 0
@@ -27256,10 +27248,8 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 680743827}
   m_SourcePrefab: {fileID: 100100000, guid: ba6b4dd7f4ce9e741a0acec0a9ca9b8e, type: 3}
-<<<<<<< HEAD
 --- !u!1 &1891896350
 GameObject:
-=======
 --- !u!1 &1886242145 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2045257923548263128, guid: d004c6a56a6ffbb4a93dc978d4e3fa55, type: 3}
@@ -27267,12 +27257,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &1886242149
 BoxCollider:
->>>>>>> 12c82e3ec7a04226bf64a54f8532dede63da5acc
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1891896351}
@@ -27401,7 +27389,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891896350}
   m_CullTransparentMesh: 1
-=======
   m_GameObject: {fileID: 1886242145}
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -27417,7 +27404,6 @@ CanvasRenderer:
   serializedVersion: 3
   m_Size: {x: 0.023, y: 0.004000002, z: 0.013999998}
   m_Center: {x: -0.0004999405, y: 0.025999997, z: 0.0069999974}
->>>>>>> 12c82e3ec7a04226bf64a54f8532dede63da5acc
 --- !u!1001 &1897947497
 PrefabInstance:
   m_ObjectHideFlags: 0
