@@ -29,6 +29,7 @@ public class TitleScreen : MonoBehaviour
 
     public void continueGame()
     {
+
         SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene(gameScene);
 
@@ -40,6 +41,9 @@ public class TitleScreen : MonoBehaviour
         if (scene.name == gameScene)
         {
             // Now the scene is fully loaded
+
+            // Set the time scale to 1.0
+            Time.timeScale = 1.0f;
 
             // Find the GameObject with the SecondSceneScript component in the loaded scene
             GameObject secondSceneObject = GameObject.FindWithTag("Player");
