@@ -4,18 +4,9 @@ using UnityEngine;
 
 public class ESC : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // This method will be connected to the button's click event
+    public void DoExitGame()
     {
-        
-    }
-
-    // Update is called once per frame
-   void Update()
-    {
-        if (Input.GetKey("escape"))
-        {
-            Application.Quit();
-        }
+        Application.Quit();
     }
 }
