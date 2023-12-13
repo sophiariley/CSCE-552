@@ -6183,6 +6183,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e6d5b9dccabd1ff4f813570874ee0abd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6d5b9dccabd1ff4f813570874ee0abd, type: 3}
       propertyPath: m_TagString
       value: Duckling
       objectReference: {fileID: 0}
@@ -7753,9 +7757,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 542898956}
-        m_TargetAssemblyTypeName: ESC, Assembly-CSharp
-        m_MethodName: DoExitGame
+      - m_Target: {fileID: 2140377927}
+        m_TargetAssemblyTypeName: TitleScreen, Assembly-CSharp
+        m_MethodName: startGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20341,7 +20345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afcf14431d7445045b87f8fda0ab0a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playTime: 80
+  playTime: 40
   pauseTime: 2
 --- !u!1 &1254089849
 GameObject:
@@ -24563,6 +24567,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e6d5b9dccabd1ff4f813570874ee0abd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6d5b9dccabd1ff4f813570874ee0abd, type: 3}
       propertyPath: m_TagString
       value: Duckling
       objectReference: {fileID: 0}
@@ -27284,7 +27292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1761216895
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28409,6 +28417,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e6d5b9dccabd1ff4f813570874ee0abd, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6d5b9dccabd1ff4f813570874ee0abd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e6d5b9dccabd1ff4f813570874ee0abd, type: 3}
       propertyPath: m_TagString
@@ -30162,6 +30174,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e6d5b9dccabd1ff4f813570874ee0abd, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6d5b9dccabd1ff4f813570874ee0abd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e6d5b9dccabd1ff4f813570874ee0abd, type: 3}
       propertyPath: m_TagString
