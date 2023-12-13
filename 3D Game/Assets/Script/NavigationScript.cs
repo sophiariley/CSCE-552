@@ -22,25 +22,29 @@ public class NavigationScript : MonoBehaviour
         float distance = Vector3.Distance (player.transform.position, transform.position);
         if (Input.GetKeyDown("e") && distance < 3) {
             _isFollowing = true;
-            //BroadcastMessage("pickedUp");
+            BroadcastMessage("walking");
+            BroadcastMessage("shivering", false);
         } else if (_isFollowing == false) {
             agent.destination = _startPos;
 
-            /*if(agent.speed == 0) {
-                BroadcastMessage("shivering");
+            if (agent.destination == transform.position) {
+                BroadcastMessage("shivering", true);
             } else {
-                BroadcastMessage("walkingBack");
-            }*/
+                // walking back
+                BroadcastMessage("isIdle", false);
+            }
         }
-
-        if (_isFollowing == true) {
+         if (_isFollowing == true) {
             //Debug.Log("Distance: " + distance);
+            BroadcastMessage("walking");
             agent.destination = player.position;
             if (Input.GetKeyDown(KeyCode.LeftShift)) {
                 transform.gameObject.GetComponent<NavMeshAgent>().speed = 10f;
             } else if (Input.GetKeyUp(KeyCode.LeftShift)) {
                 transform.gameObject.GetComponent<NavMeshAgent>().speed = 5f;
             }
+
+            BroadcastMessage("isIdle", Vector3.Distance (agent.destination, transform.position) < 3);
         }
         
         

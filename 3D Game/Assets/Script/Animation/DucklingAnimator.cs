@@ -17,8 +17,18 @@ public class DucklingAnimator : MonoBehaviour
         
     }
 
-    void pickedUp()
+    void walking()
     {
-        ducklingAnimator.SetTrigger("pickedUp");
+        ducklingAnimator.SetTrigger("walking");
+    }
+
+    void shivering(bool shivering)
+    {
+        ducklingAnimator.SetBool("shivering", shivering);
+    }
+
+    void isIdle(bool isIdle)
+    {
+        ducklingAnimator.SetBool("idle", isIdle);
     }
 }
